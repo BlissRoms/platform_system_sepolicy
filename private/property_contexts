@@ -725,7 +725,6 @@ ro.product.system.brand        u:object_r:build_prop:s0 exact string
 ro.product.system.device       u:object_r:build_prop:s0 exact string
 ro.product.system.manufacturer u:object_r:build_prop:s0 exact string
 ro.product.system.model        u:object_r:build_prop:s0 exact string
-ro.product.system.name         u:object_r:build_prop:s0 exact string
 
 ro.system.build.date                        u:object_r:build_prop:s0 exact string
 ro.system.build.date.utc                    u:object_r:build_prop:s0 exact int
