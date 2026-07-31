@@ -1,7 +1,9 @@
 typeattribute su coredomain;
 
   # Exempt userdebug-only coredomains from Treble labeling tests (b/493040969)
-  typeattribute su treble_labeling_violators;
+  userdebug_or_eng(`
+    typeattribute su treble_labeling_violators;
+  ')
 
 userdebug_or_eng(`
   domain_auto_trans(shell, su_exec, su)
@@ -143,4 +145,6 @@ userdebug_or_eng(`
 ')
 
 # su is also permissive to permit setenforce.
-permissive su;
+userdebug_or_eng(`
+    permissive su;
+')
